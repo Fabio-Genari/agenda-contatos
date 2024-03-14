@@ -16,7 +16,7 @@ const helmet = require('helmet');
 const csrf = require('csurf');
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware');
 
-//app.use(helmet());
+//app.use(helmet()); Deixar desativado enquanto usa localhost para evitar problemas
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
